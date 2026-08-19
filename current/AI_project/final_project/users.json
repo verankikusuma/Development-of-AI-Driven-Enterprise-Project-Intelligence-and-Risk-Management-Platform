@@ -1,0 +1,18 @@
+{
+    "it_user": {
+        "password": "it123",
+        "role": "IT"
+    },
+    "nonit_user": {
+        "password": "nonit123",
+        "role": "Non-IT"
+    },
+    "deep": {
+        "password": "fck",
+        "role": "IT"
+    },
+    "Dk": {
+        "password": "1234",
+        "role": "IT"
+    }
+}

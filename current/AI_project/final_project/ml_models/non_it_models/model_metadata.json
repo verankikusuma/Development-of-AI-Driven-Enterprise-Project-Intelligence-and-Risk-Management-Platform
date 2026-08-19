@@ -1,0 +1,74 @@
+{
+  "model_type": "Tuned XGBoost & Stacking Ensemble",
+  "features": [
+    "project_type",
+    "industry_sector",
+    "methodology",
+    "region",
+    "contract_type",
+    "priority",
+    "planned_duration_days",
+    "team_size",
+    "team_avg_experience_years",
+    "team_turnover_pct",
+    "stakeholder_count",
+    "requirement_changes_count",
+    "budget_usd",
+    "resource_availability_pct",
+    "vendor_dependency_count",
+    "communication_score",
+    "sponsor_engagement_score",
+    "previous_project_success_rate_pct",
+    "tech_complexity_score",
+    "regulatory_compliance_load",
+    "scope_clarity_score",
+    "external_dependency_score",
+    "safety_incidents",
+    "defect_count",
+    "milestones_missed",
+    "project_type_freq",
+    "industry_sector_freq",
+    "methodology_freq",
+    "region_freq",
+    "contract_type_freq",
+    "priority_freq",
+    "milestone_stress_ratio",
+    "turnover_experience_risk",
+    "defect_per_k_budget",
+    "governance_score",
+    "complexity_pressure",
+    "vendor_safety_risk",
+    "req_change_intensity",
+    "risk_multiplier"
+  ],
+  "metrics": {
+    "accuracy": 0.9596,
+    "precision": 0.9462,
+    "recall": 0.944,
+    "f1_score": 0.9451,
+    "roc_auc": 0.9939,
+    "confusion_matrix": [
+      [
+        7648,
+        247
+      ],
+      [
+        258,
+        4347
+      ]
+    ]
+  },
+  "training_samples": 37500,
+  "test_samples": 12500,
+  "optimal_decision_threshold": 0.48,
+  "hyperparameters": {
+    "n_estimators": 350,
+    "max_depth": 8,
+    "learning_rate": 0.04,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "gamma": 0.1,
+    "feature_engineering": "Domain Interaction Ratios + Frequency Encoding + Soft Voting Ensemble"
+  },
+  "data_disclaimer": "Trained and evaluated on 50,000 telemetry records from project_risk_dataset.csv using feature interaction engineering, 350-tree XGBoost hyperparameter tuning, and threshold optimization."
+}

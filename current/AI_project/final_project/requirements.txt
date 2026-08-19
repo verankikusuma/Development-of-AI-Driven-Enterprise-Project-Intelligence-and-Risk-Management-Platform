@@ -1,0 +1,27 @@
+# Backend
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.8.0
+pydantic-settings>=2.4.0
+sqlalchemy>=2.0.32
+psycopg2-binary>=2.9.9
+alembic>=1.13.2
+pandas>=2.2.2
+numpy>=2.0.1
+scikit-learn>=1.8.0
+networkx>=3.3
+joblib>=1.4.2
+python-dotenv>=1.0.1
+httpx>=0.27.0
+
+# Streamlit frontend
+streamlit>=1.36
+requests>=2.31
+pypdf>=4.0
+docx2txt
+
+plotly>=5.20.0
+xgboost
+catboost
+google-genai
+qdrant-client
