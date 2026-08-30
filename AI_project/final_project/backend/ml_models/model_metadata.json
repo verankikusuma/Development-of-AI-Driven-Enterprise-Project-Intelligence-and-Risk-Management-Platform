@@ -1,0 +1,114 @@
+{
+  "model_type": "Logistic Regression",
+  "features": [
+    "progress_percentage",
+    "pending_task_ratio",
+    "delay_days",
+    "budget_utilization",
+    "resource_availability",
+    "bugs_per_task",
+    "testing_progress",
+    "testing_failure_rate",
+    "requirement_change_rate",
+    "team_productivity",
+    "dependency_delay",
+    "critical_dependency_count",
+    "security_audit_progress",
+    "external_risk_score",
+    "schedule_variance",
+    "resource_pressure",
+    "dependency_risk_score"
+  ],
+  "feature_importances": {
+    "dependency_delay": 0.1273,
+    "delay_days": 0.1229,
+    "security_audit_progress": 0.1137,
+    "bugs_per_task": 0.1004,
+    "testing_progress": 0.087,
+    "testing_failure_rate": 0.0795,
+    "team_productivity": 0.0721,
+    "budget_utilization": 0.0719,
+    "external_risk_score": 0.0462,
+    "resource_pressure": 0.042,
+    "pending_task_ratio": 0.0347,
+    "dependency_risk_score": 0.0334,
+    "critical_dependency_count": 0.0191,
+    "progress_percentage": 0.0153,
+    "schedule_variance": 0.0139,
+    "resource_availability": 0.0121,
+    "requirement_change_rate": 0.0083
+  },
+  "metrics": {
+    "accuracy": 0.8368,
+    "precision": 0.7568,
+    "recall": 0.5283,
+    "f1_score": 0.6222,
+    "roc_auc": 0.8583,
+    "confusion_matrix": [
+      [
+        439,
+        27
+      ],
+      [
+        75,
+        84
+      ]
+    ]
+  },
+  "all_model_evaluations": {
+    "Logistic Regression": {
+      "accuracy": 0.8368,
+      "precision": 0.7568,
+      "recall": 0.5283,
+      "f1_score": 0.6222,
+      "roc_auc": 0.8583,
+      "confusion_matrix": [
+        [
+          439,
+          27
+        ],
+        [
+          75,
+          84
+        ]
+      ]
+    },
+    "Random Forest": {
+      "accuracy": 0.8112,
+      "precision": 0.699,
+      "recall": 0.4528,
+      "f1_score": 0.5496,
+      "roc_auc": 0.8428,
+      "confusion_matrix": [
+        [
+          435,
+          31
+        ],
+        [
+          87,
+          72
+        ]
+      ]
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.8128,
+      "precision": 0.675,
+      "recall": 0.5094,
+      "f1_score": 0.5806,
+      "roc_auc": 0.8396,
+      "confusion_matrix": [
+        [
+          427,
+          39
+        ],
+        [
+          78,
+          81
+        ]
+      ]
+    }
+  },
+  "training_samples": 2500,
+  "test_samples": 625,
+  "data_disclaimer": "Trained on synthetic project historical telemetry for demonstration and validation. Production usage requires continuous integration of real enterprise project tracking data."
+}
