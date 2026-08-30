@@ -1,0 +1,33 @@
+# Environment
+.env
+**/.env
+
+# Virtual environments
+.venv/
+**/.venv/
+
+# Databases
+*.db
+
+# User uploaded files
+**/data/uploads/
+
+# User credentials
+users.json
+**/users.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+**/.DS_Store
+
+# Editor settings
+.vscode/
+**/.vscode/
+
+# Local agent/config files
+.agents/
+**/.agents/

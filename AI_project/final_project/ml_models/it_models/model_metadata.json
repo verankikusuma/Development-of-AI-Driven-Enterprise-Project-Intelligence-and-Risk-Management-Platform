@@ -1,0 +1,50 @@
+{
+  "model_type": "XGBoost Classifier (Trained & Evaluated)",
+  "features": [
+    "project_type",
+    "industry_sector",
+    "methodology",
+    "region",
+    "contract_type",
+    "priority",
+    "planned_duration_days",
+    "team_size",
+    "team_avg_experience_years",
+    "team_turnover_pct",
+    "stakeholder_count",
+    "requirement_changes_count",
+    "budget_usd",
+    "resource_availability_pct",
+    "vendor_dependency_count",
+    "communication_score",
+    "sponsor_engagement_score",
+    "previous_project_success_rate_pct",
+    "tech_complexity_score",
+    "regulatory_compliance_load",
+    "scope_clarity_score",
+    "external_dependency_score",
+    "safety_incidents",
+    "defect_count",
+    "milestones_missed"
+  ],
+  "metrics": {
+    "accuracy": 0.9349,
+    "precision": 0.9228,
+    "recall": 0.898,
+    "f1_score": 0.9102,
+    "roc_auc": 0.9859,
+    "confusion_matrix": [
+      [
+        4539,
+        207
+      ],
+      [
+        281,
+        2473
+      ]
+    ]
+  },
+  "training_samples": 22500,
+  "test_samples": 7500,
+  "data_disclaimer": "Trained and evaluated on 30,000 historical IT project records from project_risk_dataset.csv with XGBoost decision trees."
+}
